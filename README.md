@@ -1,6 +1,4 @@
-# Npontu A
-
-# README
+# Npontu
 
 ## Overview
 Deploying a PHP Laravel web application with

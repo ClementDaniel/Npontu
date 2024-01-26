@@ -1,0 +1,18 @@
+global:
+  scrape_interval: 15s # Adjust this interval if needed
+  evaluation_interval: 15s
+  external_labels:
+    monitor: 'grafana'
+  scrape_configs:
+    - job_name: 'prometheus'
+      static_configs:
+        - targets: ['localhost:9090']  # Replace if Prometheus runs elsewhere
+    # Add additional scrape configs for other targets here
+
+rule_files:
+  - 'rules/*.rules.yml'  # Add your rule files here
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: ['localhost:9093']  # Replace if Alertmanager runs elsewhere

@@ -1,5 +1,7 @@
 # Npontu A
 
+# README
+
 ## Overview
 Deploying a PHP Laravel web application with
 MySQL database on physical bare servers using DevOps best practices.
@@ -21,6 +23,18 @@ available, scalable, and secure.
 #### Ansible Deployment
 
 1. Install Ansible on the control machine.
+
+# Installing Ansible
+
+On Ubuntu or Debian systems:
+
+* **Update the package list:**
+sudo apt update
+* **Install Ansible:**
+sudo apt install ansible
+* **Verify the installation:**
+ansible --version
+
 2. Run the playbook: `ansible-playbook -i inventory deploy.yml`
     
 
@@ -120,6 +134,8 @@ If you want to run Grafana and Prometheus locally for development purposes, you 
 
 - If there are issues during the deployment, check the Ansible output for error messages.
 - Review Grafana and Prometheus logs for any issues.
+
+
 
 
 

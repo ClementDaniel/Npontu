@@ -42,5 +42,3 @@ CMD ["apache2", "foreground"]
 
 
 
-# Run Apache process
-CMD ["apache2-foreground"]
